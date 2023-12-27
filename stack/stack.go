@@ -1,7 +1,6 @@
-// This package implements LIFO stack
-// based on singly linked list.
+// This package implements LIFO stack based on singly-linked list
 
-package main
+package stack
 
 type Stack[T any] struct {
 	top *Entry[T]
