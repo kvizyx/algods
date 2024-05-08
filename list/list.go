@@ -1,5 +1,3 @@
-// This package implements doubly-linked list
-
 package list
 
 type List[T any] struct {
@@ -10,10 +8,6 @@ type List[T any] struct {
 type Node[T any] struct {
 	data       T
 	next, prev *Node[T]
-}
-
-func New[T any]() *List[T] {
-	return &List[T]{}
 }
 
 func (l *List[T]) InsertHead(data T) {

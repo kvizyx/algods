@@ -1,5 +1,3 @@
-// This package implements LIFO stack based on singly-linked list
-
 package stack
 
 type Stack[T any] struct {
@@ -9,12 +7,6 @@ type Stack[T any] struct {
 type Entry[T any] struct {
 	data T
 	next *Entry[T]
-}
-
-func New[T any]() *Stack[T] {
-	return &Stack[T]{
-		top: nil,
-	}
 }
 
 func (s *Stack[T]) Push(data T) {
